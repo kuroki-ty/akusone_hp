@@ -47,7 +47,7 @@ margin:0 auto;
 width:100%;
 }
 
-#container{
+.container{
 	height:300px;
 }
 
@@ -330,12 +330,16 @@ font-weight:bold;
 
 /* PC用 */
 @media only screen and (min-width:960px){	
-	#wrapper,.inner{
-	width:940px;
-	padding:0;
+	#wrapper{
+		margin: 0;
+		padding: 0;
+		width: 100%;
 	}
-	
-	#wrapper{padding-bottom:20px;}
+
+	.inner{
+		width:960px;
+		padding:0;
+	}
 	
   nav div.panel{
 	display:block !important;
