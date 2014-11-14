@@ -1,35 +1,32 @@
-<!DOCTYPE html>
-<html dir="ltr" lang="ja">
+<!DOCTYPE HTML>
+
+<html>
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, user-scalable=yes, maximum-scale=1.0, minimum-scale=1.0">
-<meta name="description" content="ホームページサンプル株式会社 | ホームページサンプル株式会社では最新技術と自然との調和を目指します。">
-<meta name="keywords" content="">
-<title>hogehoge株式会社 | テスト</title>
-<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
-<!--[if lt IE 9]>
-<script src="js/html5.js"></script>
-<script src="js/css3-mediaqueries.js"></script>
-<![endif]-->
-<script src="js/jquery-1.11.1.min.js"></script>
-<script src="js/script.js"></script>
-<link rel="stylesheet" href="css/jquery.skippr.css">
-<script type="text/javascript" src="js/jquery.skippr.js"></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	
+	<title>Responsive.gs Example</title>
+	
+	<link rel="stylesheet" media="all" href="css/style.css" />
+	
+	<script src="scripts/respond.min.js"></script>
+	<script src="scripts/jquery-1.11.1.min.js"></script>
+	<script src="scripts/script.js"></script>
+	<link rel="stylesheet" href="css/jquery.skippr.css">
+	<script type="text/javascript" src="scripts/jquery.skippr.js"></script>
+	
 </head>
+
 <body>
 
+<div class="container row">
 
-<!-- ヘッダー -->
-<div id="header">
-	<div class="inner">
-		<!-- ロゴ -->
-		<div class="logo">
-			<a href="index.html">Company Name<br><span>Your Company Slogan</span></a>
+	<header role="banner" class="row">
+		<div class="col span_4">
+			ロゴ入れる
 		</div>
-		<!-- / ロゴ -->
-    
 		<!-- メインナビゲーション -->
-		<nav id="mainNav">
+		<nav id="mainNav" class="col span_8">
 			<a class="menu" id="menu"><span>MENU</span></a>
 			<div class="panel">
 				<ul>
@@ -42,56 +39,106 @@
 	 		</div>
 	    </nav>
 		<!-- メインナビゲーション -->
-  	</div>
-</div>
-<!-- / ヘッダー -->
 
-<!-- WRAPPER -->
-<div id="wrapper">
-	<!--div class="inner"-->
-		<div class="container">
-		  	<div id="theTarget">
-			    <div style="background-image: url(images/test1.jpg)"></div>
-			    <div style="background-image: url(images/test2.jpg)"></div>
-			    <div style="background-image: url(images/test3.jpg)"></div>
-			    <div style="background-image: url(images/test4.jpg)"></div>
-			    <div style="background-image: url(images/test5.jpg)"></div>
-		  	</div>
+		<div class="col span_12" >
+
+			<div id="spotLight">
+				<div id="theTarget">
+				    <div style="background-image: url(images/test1.jpg)"></div>
+				    <div style="background-image: url(images/test2.jpg)"></div>
+				    <div style="background-image: url(images/test3.jpg)"></div>
+				    <div style="background-image: url(images/test4.jpg)"></div>
+				    <div style="background-image: url(images/test5.jpg)"></div>
+			  	</div>
+			</div>
+
 		</div>
-	<!--/div-->	
-</div>
-<!-- / WRAPPER -->
+	
+	</header>
 
-<!-- フッター -->
-<div id="footer">
-	<div class="inner">
-    
-		<!-- 3カラム -->
-    <section class="gridWrapper">
-      
-			<article class="grid">
-      	<!-- ロゴ -->
-				<p class="logo"><a href="index.html">Company Name<br /><span>Your Company Slogan</span></a></p>
-				<!-- / ロゴ -->
-			</article>
-			
-      <article class="grid">
-      	<!-- 電話番号+受付時間 -->
-				<p class="tel">電話: <strong>012-3456-7890</strong></p>
-				<p>受付時間: 平日 AM 10:00 〜 PM 5:00</p>
-				<!-- / 電話番号+受付時間 -->
-			</article>
-			
-      <article class="grid copyright">
-      	Copyright(c) 2012 Sample Inc. All Rights Reserved. Design by <a href="http://f-tpl.com" target="_blank" rel="nofollow">http://f-tpl.com</a>
-			</article>
+	<div class="row gutters">
+
+		<main role="main">
+
+			<div id="news" class="col span_8">
+				<h1>NEWS -お知らせ-</h1>
+				<ul>
+					<li>
+						<article>
+							<div class="col span_4">
+	              				<time datetime="2014-01-01 00:00:00" pubdate="pubdate">2014/01/01</time>
+	              			</div>
+	              			<div class="col span_8">
+	              				<h2>あああああああああああああああああああああ</h2>
+	              			</div>
+	              		</article>
+	              	</li>
+	              	<li>
+						<article>
+							<div class="col span_4">
+	              				<time datetime="2014-01-01 00:00:00" pubdate="pubdate">2014/01/01</time>
+	              			</div>
+	              			<div class="col span_8">
+	              				<h2>aaaaaaaaaaaaaaaaaaa<br>bbbbbbbbbbbb</h2>
+	              			</div>
+	              		</article>
+	              	</li>
+	              	<li>
+						<article>
+							<div class="col span_4">
+	              				<time datetime="2014-01-01 00:00:00" pubdate="pubdate">2014/01/01</time>
+	              			</div>
+	              			<div class="col span_8">
+	              				<h2>あああああああああああああああああああああ</h2>
+	              			</div>
+	              		</article>
+	              	</li>
+	              	<li>
+						<article>
+							<div class="col span_4">
+	              				<time datetime="2014-01-01 00:00:00" pubdate="pubdate">2014/01/01</time>
+	              			</div>
+	              			<div class="col span_8">
+	              				<h2>あああああああああああああああああああああ</h2>
+	              			</div>
+	              		</article>
+	              	</li>
+	              	<li>
+						<article>
+							<div class="col span_4">
+	              				<time datetime="2014-01-01 00:00:00" pubdate="pubdate">2014/01/01</time>
+	              			</div>
+	              			<div class="col span_8">
+	              				<h2>あああああああああああああああああああああ</h2>
+	              			</div>
+	              		</article>
+	              	</li>
+				</ul>
+			</div>
+
+		</main>
+
+		<aside role="complimentary" class="col span_4">
 		
-    </section>
-		<!-- / 3カラム -->
-      
+			<div id="sideBanner">
+				<img src="images/banners/banner000.png"></img>
+				<img src="images/banners/banner001.png"></img>
+				<img src="images/banners/banner002.png"></img>
+				<img src="images/banners/banner003.png"></img>
+				<img src="images/banners/banner004.png"></img>
+			</div>
+		
+		</aside>
 	</div>
+	
+	<footer role="contentinfo" class="row">
+	
+		Footer
+	
+	</footer>
+
 </div>
-<!-- / フッター -->
 
 </body>
+
 </html>

@@ -1,0 +1,132 @@
+/*	12 COLUMN : RESPONSIVE GRID SYSTEM
+	DEVELOPER : DENIS LEBLANC
+	URL : http://responsive.gs
+	VERSION : 3.0
+	LICENSE : GPL & MIT */
+
+
+/* 	SET ALL ELEMENTS TO BOX-SIZING : BORDER-BOX */
+* { 
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	*behavior: url(/scripts/boxsizing.htc); 
+	/*	If you need support for IE7 and lower make 
+		sure the boxsizing.htc file is linked properly.
+		More info here:  https://github.com/Schepp/box-sizing-polyfill */
+}
+
+
+/*	MAIN CONTAINER 
+	Set the width to whatever you want the width of your site to be. */
+.container { 
+	max-width: 978px;
+	margin: 0 auto; 
+}
+
+/*	SELF CLEARING FLOATS - CLEARFIX METHOD */
+.container:after,
+.row:after, 
+.col:after, 
+.clr:after, 
+.group:after { 
+	content: ""; 
+	display: table; 
+	clear: both; 
+}
+
+/* 	DEFAULT ROW STYLES 
+	Set bottom padding according to preference */
+.row { 
+	padding-bottom: 0em;
+}
+			
+								  
+/* DEFAULT COLUMN STYLES */
+.col { 
+	display: block;
+	float: left;
+	width: 100%;
+}
+
+@media ( min-width : 978px ) {
+	
+	.gutters .col {
+		margin-left: 2%;
+	}
+	
+	.gutters .col:first-child { 
+		margin-left: 0; 
+	}
+}
+
+
+
+
+/*	COLUMN WIDTH ON DISPLAYS +978px 
+	You might need to play with media queries here to suite your design. */
+@media ( min-width : 978px ) {
+	.span_1 { width: 8.33333333333%; }
+	.span_2 { width: 16.6666666667%; }
+	.span_3 { width: 25%; }
+	.span_4 { width: 33.3333333333%; }
+	.span_5 { width: 41.6666666667%; }
+	.span_6 { width: 50%; }
+	.span_7 { width: 58.3333333333%; }
+	.span_8 { width: 66.6666666667%; }
+	.span_9 { width: 75%; }
+	.span_10 { width: 83.3333333333%; }
+	.span_11 { width: 91.6666666667%; }
+	.span_12 { width: 100%; }
+	
+	.gutters .span_1 { width: 6.5%; }
+	.gutters .span_2 { width: 15.0%; }
+	.gutters .span_3 { width: 23.5%; }
+	.gutters .span_4 { width: 32.0%; }
+	.gutters .span_5 { width: 40.5%; }
+	.gutters .span_6 { width: 49.0%; }
+	.gutters .span_7 { width: 57.5%; }
+	.gutters .span_8 { width: 66.0%; }
+	.gutters .span_9 { width: 74.5%; }
+	.gutters .span_10 { width: 83.0%; }
+	.gutters .span_11 { width: 91.5%; }
+	.gutters .span_12 { width: 100%; }
+
+	/*左に余白を挿入する(無かったので追加した)*/
+/*	.push_1 { margin-left: 8.33333333333%; }
+	.push_2 { margin-left: 16.6666666667%; }
+	.push_3 { margin-left: 25%; }
+	.push_4 { margin-left: 33.3333333333%; }
+	.push_5 { margin-left: 41.6666666667%; }
+	.push_6 { margin-left: 50%; }
+	.push_7 { margin-left: 58.3333333333%; }
+	.push_8 { margin-left: 66.6666666667%; }
+	.push_9 { margin-left: 75%; }
+	.push_10 { margin-left: 83.3333333333%; }
+	.push_11 { margin-left: 91.6666666667%; }
+	.span_12 { margin-left: 100%; }
+	 
+	.gutters .push_1 { margin-left: 10.5%; }
+	.gutters .push_2 { margin-left: 19.0%; }
+	.gutters .push_3 { margin-left: 27.5%; }
+	.gutters .push_4 { margin-left: 36.0%; }
+	.gutters .push_5 { margin-left: 44.5%; }
+	.gutters .push_6 { margin-left: 53.0%; }
+	.gutters .push_7 { margin-left: 61.5%; }
+	.gutters .push_8 { margin-left: 70.0%; }
+	.gutters .push_9 { margin-left: 78.5%; }
+	.gutters .push_10 { margin-left: 87.0%; }
+	.gutters .push_11 { margin-left: 95.5%; }
+	 
+	.gutters .push_1:first-child { margin-left: 8.5%; }
+	.gutters .push_2:first-child { margin-left: 17.0%; }
+	.gutters .push_3:first-child { margin-left: 25.5%; }
+	.gutters .push_4:first-child { margin-left: 34.0%; }
+	.gutters .push_5:first-child { margin-left: 42.5%; }
+	.gutters .push_6:first-child { margin-left: 51.0%; }
+	.gutters .push_7:first-child { margin-left: 59.5%; }
+	.gutters .push_8:first-child { margin-left: 68.0%; }
+	.gutters .push_9:first-child { margin-left: 76.5%; }
+	.gutters .push_10:first-child { margin-left: 85.0%; }
+	.gutters .push_11:first-child { margin-left: 93.5%; }*/;
+}
