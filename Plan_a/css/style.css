@@ -14,7 +14,7 @@ body {
 }
 
 header {
-	line-height: 50px;
+	height: 65px;
 	text-align: center;
 }
 
@@ -24,10 +24,23 @@ aside {
 }
 
 footer {
-	line-height: 15em;
+	line-height: 3em;
 	text-align: center;
-	background: #BBB;
+	background: #000000;
 }
+
+/*ブロック要素を縦中央配置にする*/
+.table{
+    height: 65px;
+    width: 600px;
+    display: table;
+    text-align: center;
+}
+.table > *{
+    display: table-cell;
+    vertical-align: middle;
+}
+/****************************/
 
 /*--------------------------
  リンク設定
@@ -39,9 +52,9 @@ a:active, a:focus{outline:0;}
 /*--------------------------
  ヘッダー
  ---------------------------*/
-#header h1{
-	font-size:12px;
-	font-weight:normal;
+header img{
+	width: auto;
+   	max-height: 60px;
 }
 
 /*--------------------------
@@ -95,7 +108,7 @@ a:active, a:focus{outline:0;}
  ---------------------------*/
 #spotLight{
 	width: auto;
-	height: 300px;
+	height: 400px;
 }
 
 /*--------------------------
@@ -111,7 +124,7 @@ a:active, a:focus{outline:0;}
 #news h1{
 	font-size: 20px;
 	font-weight: bold;
-	color: blue;
+	color: #000000;
 	margin-bottom: 1em;
 }
 #news time,h2{
@@ -131,6 +144,16 @@ a:active, a:focus{outline:0;}
 }
 
 /*--------------------------
+ フッター
+ ---------------------------*/
+ footer p{
+ 	vertical-align: center;
+ 	text-align: center;
+ 	font-size: 12px;
+ 	color: #FFFFFF;
+ }
+
+/*--------------------------
  レスポンシブ・ウェブデザイン	
  ---------------------------*/
 /* PC用 */
@@ -138,6 +161,7 @@ a:active, a:focus{outline:0;}
 	nav div.panel{
 		display:block !important;
 		float:right;
+		padding-top: 15px;
 	}
 
 	a#menu{display:none;}
@@ -156,9 +180,9 @@ a:active, a:focus{outline:0;}
 	}
 
 	nav#mainNav ul a{
-		font-size:13px;
+		font-size:16px;
 		display:block;
-		padding:10px;
+		padding:5px;
 		border-bottom:3px solid #fff;
 	}
 

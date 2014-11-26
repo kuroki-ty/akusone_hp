@@ -5,59 +5,77 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	
-	<title>Responsive.gs Example</title>
-	
-	<link rel="stylesheet" media="all" href="css/style.css" />
+	<title>AkusOne株式会社</title>
+
+	<link rel="stylesheet" media="all" href="css/style.css">
 	
 	<script src="scripts/respond.min.js"></script>
 	<script src="scripts/jquery-1.11.1.min.js"></script>
-	<script src="scripts/script.js"></script>
+
 	<link rel="stylesheet" href="css/jquery.skippr.css">
-	<script type="text/javascript" src="scripts/jquery.skippr.js"></script>
-	
+	<script src="scripts/jquery.skippr.js"></script>
+	<script type="text/javascript" src="scripts/skippr_script.js"></script>
+
+	<link rel="stylesheet" href="css/component.css">
+	<script src="scripts/waypoints.min.js"></script>
+	<script type="text/javascript" src="scripts/waypoints_script.js"></script>
+
+
 </head>
 
 <body>
 
-<div class="container row">
+	<!--ヘッダー-->
+	<header role="bannzer" class="row">
+		<div class="ha-header">
+			<div class="container">
 
-	<header role="banner" class="row">
-		<div class="col span_4">
-			ロゴ入れる
-		</div>
-		<!-- メインナビゲーション -->
-		<nav id="mainNav" class="col span_8">
-			<a class="menu" id="menu"><span>MENU</span></a>
-			<div class="panel">
-				<ul>
-					<li><a href="index.html">会社紹介</a></li>
-					<li><a href="index.html">プロジェクト紹介</a></li>
-					<li><a href="index.html">イベント</a></li>
-					<li><a href="index.html">インターン</a></li>
-					<li><a href="index.html">お問い合わせ</a></li>
-				</ul>
-	 		</div>
-	    </nav>
-		<!-- メインナビゲーション -->
+				<div class="col span_4">
+					<a href="index.html"><img src="images/logo.png" alt="AkusOne株式会社"></img></a>
+				</div>
 
-		<div class="col span_12" >
+				<!-- メインナビゲーション -->
+				<nav id="mainNav" class="col span_8">
+					<a class="menu" id="menu"><span>MENU</span></a>
+					<div class="panel">
+						<ul>
+							<li><a href="index.html">会社紹介</a></li>
+							<li><a href="index.html">プロジェクト紹介</a></li>
+							<li><a href="index.html">イベント</a></li>
+							<li><a href="index.html">インターン</a></li>
+							<li><a href="index.html">お問い合わせ</a></li>
+						</ul>
+			 		</div>
+			    </nav>
+			    <!-- メインナビゲーション -->
 
-			<div id="spotLight">
-				<div id="theTarget">
-				    <div style="background-image: url(images/test1.jpg)"></div>
-				    <div style="background-image: url(images/test2.jpg)"></div>
-				    <div style="background-image: url(images/test3.jpg)"></div>
-				    <div style="background-image: url(images/test4.jpg)"></div>
-				    <div style="background-image: url(images/test5.jpg)"></div>
-			  	</div>
 			</div>
+		<div>
 
-		</div>
-	
 	</header>
 
-	<div class="row gutters">
+	<!--ヘッダー-->
+	
+	<!--注目トピック-->
+	<div class="row">
 
+		<div id="spotLight">
+			<div id="theTarget">
+			    <div style="background-image: url(images/test1.jpg)"></div>
+			    <div style="background-image: url(images/test2.jpg)"></div>
+			    <div style="background-image: url(images/test3.jpg)"></div>
+			    <div style="background-image: url(images/test4.jpg)"></div>
+			    <div style="background-image: url(images/test5.jpg)"></div>
+		  	</div>
+		</div>
+
+	</div>
+	<!--注目トピック-->
+
+	<!--コンテンツ-->
+	<div class="row container gutters">
+
+		<!--メインコンテンツ-->
 		<main role="main">
 
 			<div id="news" class="col span_8">
@@ -117,7 +135,9 @@
 			</div>
 
 		</main>
+		<!--メインコンテンツ-->
 
+		<!--サイドバー-->
 		<aside role="complimentary" class="col span_4">
 		
 			<div id="sideBanner">
@@ -129,15 +149,23 @@
 			</div>
 		
 		</aside>
+		<!--サイドバー-->
+
 	</div>
-	
+	<!--コンテンツ-->
+
+	<!--フッター-->
 	<footer role="contentinfo" class="row">
 	
-		Footer
+		<div class="container">
+			<div class="col span_12">
+				<p>Copyright©2014 AkusOne Inc.</p>
+			</div>
+		</div>
+
 	
 	</footer>
-
-</div>
+	<!--フッター-->
 
 </body>
 
