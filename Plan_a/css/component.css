@@ -49,7 +49,7 @@ section p {
 /* Header styles and animations */
 
 .ha-header {
-	background: rgba(255, 255, 255, 0.8);
+	background: rgba(255, 255, 255, 1);
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -64,6 +64,7 @@ section p {
 	-webkit-transition: all 0.5s;
 	-moz-transition: all 0.5s;
 	transition: all 0.5s;
+	box-shadow: 2px 2px 1px rgba(0,0,0,0.1);
 }
 
 .ha-header-perspective {
